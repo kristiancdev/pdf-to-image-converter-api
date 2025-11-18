@@ -1,28 +1,3 @@
-Perfecto. A continuación, te proporciono el contenido para un archivo `requirements.txt` y un archivo `README.md` que explican cómo levantar la API en un entorno Windows.
-
----
-
-### 📁 `requirements.txt`
-
-Este archivo lista todas las dependencias necesarias para que tu API funcione.
-
-```txt
-fastapi==0.115.6
-pdf2image==1.17.0
-python-multipart==0.0.20
-Pillow==11.0.0
-uvicorn[standard]==0.32.0
-```
-
-> **Nota**: Puedes ajustar las versiones si lo deseas (por ejemplo, usar `fastapi>=0.115.0`), pero es recomendable usar versiones fijas para garantizar la reproducibilidad.
-
----
-
-### 📄 `README.md`
-
-Este archivo contiene las instrucciones paso a paso para ejecutar la API en Windows.
-
-```markdown
 # API de Conversión de PDF a Imágenes
 
 Esta API convierte cada página de un archivo PDF subido en imágenes PNG con una resolución de 300 DPI. Las imágenes generadas se almacenan en una carpeta local.
@@ -52,8 +27,7 @@ Antes de comenzar, asegúrate de tener instalado:
      venv\Scripts\activate.bat
      ```
    - En PowerShell:
-     ```powershell
-     venv\Scripts\Activate.ps1
+     ```powershell     venv\Scripts\Activate.ps1
      ```
      > **Nota para PowerShell**: Si obtienes un error de ejecución de scripts, ejecuta `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser` en una nueva sesión de PowerShell como administrador y confirma con `S`.
 
@@ -112,9 +86,6 @@ Antes de comenzar, asegúrate de tener instalado:
 Para detener la API, vuelve a la terminal donde está corriendo `uvicorn` y presiona `CTRL+C`.
 
 ---
-```
-
----
 
 ### 📌 Pasos Resumidos para el Usuario Final
 
@@ -126,4 +97,4 @@ Para detener la API, vuelve a la terminal donde está corriendo `uvicorn` y pres
 6.  Ejecutar `uvicorn main:app --reload`.
 7.  Acceder a `http://127.0.0.1:8000/docs` para interactuar con la API.
 
-Este `README.md` debería ser suficientemente claro para que cualquier persona con un entorno Windows pueda levantar tu API.
+Este `README.md` debería ser suficientemente claro para que cualquier persona con un entorno Windows pueda levantar tu API. 
