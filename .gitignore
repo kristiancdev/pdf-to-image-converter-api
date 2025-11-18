@@ -1,0 +1,60 @@
+# Entornos virtuales de Python
+venv/
+env/
+ENV/
+.venv/
+.env
+
+# Dependencias y paquetes
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg
+
+# Proyectos IDE (ej: VS Code, PyCharm)
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos generados por tu API
+imagenes_generadas/
+
+# Archivos de logs
+*.log
+logs/
+
+# Variables de entorno
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Archivos temporales
+*.tmp
+*~
+
+# Artifacts de CI/CD (si no usas ninguno, puedes dejarlo comentado)
+# .github/workflows/artifacts/
